@@ -107,6 +107,62 @@ h2 {
   background: linear-gradient(145deg, #0f2345, #0a1b35);
 }
 
+.section--price {
+  background: linear-gradient(145deg, #112a51, #0e2243);
+}
+
+.price-intro {
+  margin-top: -0.25rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.price-groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.price-card {
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+}
+
+.price-card--wide {
+  grid-column: 1 / -1;
+}
+
+.price-card h3 {
+  margin: 0 0 0.8rem;
+}
+
+.price-card h4 {
+  margin: 0 0 0.6rem;
+  color: #d8f6ff;
+}
+
+.price-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.repair-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.service-notes {
+  margin-top: 1rem !important;
+  padding-left: 0 !important;
+  list-style: none;
+}
+
 .contacts-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -157,6 +213,11 @@ a:hover {
   }
 
   .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-groups,
+  .repair-grid {
     grid-template-columns: 1fr;
   }
 
